@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Righteous&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.home {
+    cursor: pointer;
+    font-size: 2rem;
+
+}
+
+.home:hover {
+    color: green;
+}
+
+
+
+
+.container {
+    background-color: rgb(250, 255, 250);
+    padding: 5%;
+    min-width: 70%;
+    min-height: 60vh;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(0, 17, 0);
+    position: relative;
+    border: 1px solid rgb(3, 7, 3);
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 30% 30%;
+    grid-template-rows: auto auto;
+    gap: 2rem 2rem;
+    justify-content: center;
+    margin-top: 10%;
+
+}
+
+.grid-item {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    font-family: cursive;
+    border: 1px solid rgb(3, 7, 3);
+
+}
+
+.selected {
+    border: 1px solid rgb(10, 10, 10);
+    background: rgb(129, 127, 127);
+    color: rgb(248, 248, 248);
+}
+
+.grid-item:hover {
+    cursor: pointer;
+}
+
+.question {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 2rem;
+    font-family: 'Righteous', cursive;
+}
+
+.lower-btn {
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+option:hover {
+    transform: scale(1);
+    transition: all 2s;
+}
+
+.btn {
+    padding: 10px;
+    width: 30%;
+    background-color: green;
+    border: none;
+    color: aliceblue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(0, 66, 0);
+
+}
+
+.btn:disabled {
+    background-color: rgb(66, 83, 66);
+}
+
+
+.heading {
+    text-align: center;
+}
+
+.test {
+    font-size: 5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+}
+
+.test:hover {
+    color: green;
+    cursor: pointer;
+
+}
+
+.tab2 {
+    display: none;
+    position: relative;
+}
+
+/* option:hover {
+    cursor: pointer;
+    background-color: aquamarine;
+
+} */
+
+.right {
+    background-color: greenyellow;
+    color: black;
+}
+
+.wrong {
+    background-color: rgb(255, 58, 58);
+    color: rgb(255, 255, 255);
+}
+
+.score {
+    display: inline-block;
+    position: absolute;
+    right: 3%;
+    font-size: 2rem;
+    font-family: 'Righteous', cursive;
+}
+
+.q-left {
+    display: inline-block;
+    position: absolute;
+    right: 30%;
+    font-size: 2rem;
+    font-family: 'Righteous', cursive;
+}
+
+.scorecard {
+    text-align: center;
+    width: 80%;
+    position: absolute;
+    bottom: 10%;
+    font-size: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Righteous', cursive;
+    display: none;
+}
+
+.list {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2%;
+    border: 1px solid rgb(6, 27, 6);
+    border-radius: 15px;
+    font-size: large;
+    background-color: rgb(183, 255, 183);
+    box-shadow: 2px 2px 2px rgba(0, 12, 0.06);
+
+}
+
+select option {
+    background: rgb(222, 255, 211);
+}
+
+select:focus {
+    border-radius: 15px 15px 0 0;
+    outline: none;
+}
+
+/* select:focus option:nth-child(5) {
+    background-color: aqua;
+    border-radius: 15px 15px 0 0;
+} */
+/* select[data-chosen] {
+    border-radius: 15px;
+} */
